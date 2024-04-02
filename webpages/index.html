@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Tax Calculator by Abhi</title>
+    <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-<form action ="secondpage.html" method="get">
+
+<main>
+    <div id="commonDesign">
+<form method="GET" id="salestax-form">
     <fieldset>
         <h1>Sales Tax Calculator</h1>
     <p>Enter Subtotal and Tax Rate and click "Calculate":</p>
+
+    <div class="form-element">
     <label for="Subtotal">Subtotal:</label>
-    <input type = "number" step="any" placeholder ="120.25"> <br> <br>
+    <input type = "number" step="any" name="subtotal" placeholder ="120.25"> <br> <br>
+    </div>
+
+    <div class="form-element">
     <label for="TaxRate">Tax Rate:</label>
-    <input type = "number" step="any" placeholder ="7.5"> <br> <br>
+    <input type = "number" step="any" name="taxrate" placeholder ="7.5"> <br> <br>
+    </div>
+
+    <div class="form-element">
     <label for="SalesTax">Sales Tax:</label>
-    <input type = "number" step="any" placeholder ="9.02"> <br> <br>
+    <input type = "number" step="any" name="salestax" readonly> <br> <br>
+    </div>
+
+    <div class="form-element">
     <label for="Total">Total:</label>
-    <input type = "number" step="any" placeholder ="129.27"> <br> <br> 
+    <input type = "number" step="any" name="total" readonly> <br> <br> 
+    </div>
+
+    <div class="button">
     <input type="submit" value="Calculate"> &nbsp; &nbsp;
     <input type="reset" value="Clear"> <br> <br>
+    </div>
 
     <footer>
         &copy; Abhi Bhagat/N01639927 2024
@@ -27,6 +46,8 @@
 
 </fieldset>
 </form>
+</div>
+</main>
 
 <nav>
     <ul>
@@ -36,6 +57,6 @@
         <a href ="part4.html"> Reservation Request</a> &nbsp; &nbsp;
     </ul>
 </nav>
-
+<script src="../js/index.js"></script>
 </body>
 </html>

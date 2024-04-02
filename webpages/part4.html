@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Income Tax Calculator by Abhi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Income Tax Calculator by Abhi</title>
+  <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-<form action ="secondpage.html" method="get">
-<h1>Reservation Request</h1> <br>
-<fieldset>
-    <legend><b>General Information</b></legend> <br>
-    <label for="TaxableIncome">Enter taxable income:</label> 
-    <input type="date" id="start" name="Arrival date:" value="2023-01-27" > <br>
-    <label for="Nights">Nights:</label> &nbsp; 
-    <input type = "number" placeholder ="two"> <br> 
-    <label for ="Adults">Adults:</label> &nbsp; 
-    <input type="number" id="Adults"  min="0" max="100" > <br> 
-    <label for="Childrens">Childrens:</label> &nbsp; 
-    <input type="number" id="Childrens" min="0" max="100" > <br> <br>
-</fieldset>
-<br>
-<fieldset>
-    <legend><b>Preferences</b></legend>
-    <label> Room type:</label>
-        <input type="radio" id="Standard" name="RoomType" value="Standard">
-        <label>Standard</label>
-        <input type="radio" id="Business" name="RoomType" value="Business">
-        <label>Business</label>
-        <input type="radio" id="Suite" name="RoomType" value="Suite">
-        <label>Suite</label><br>
-        <label> Bed type:</label>
-        <input type="radio" id="King" name="BedType" value="King">
-        <label>King</label>
-        <input type="radio" id="DoubleDouble" name="BedType" value="Double Double">
-        <label>Double Double</label> <br>
-        <input type="checkbox" id="Smoking" name="Smoking" value="Smoking">
-        <label>Smoking</label><br>
+    <main>
+        <div id="commonDesign">
+  <form action ="secondpage.html" method="get">
+    <h1>Reservation Request</h1> <br>
+    <fieldset>
+      <legend><b>General Information</b></legend> <br>
+      <label for="dateInput">Arrival date:</label>
+      <input type="date" id="dateInput" name="Arrival date:" value="2023-01-27" required> <br>
+      <label for="Nights">Nights:</label> &nbsp;
+      <input type = "number" placeholder ="two" id="Nights" required> <br>
+      <label for ="Adults">Adults:</label> &nbsp;
+      <input type="number" id="Adults"  min="0" max="100" required> <br>
+      <label for="Childrens">Childrens:</label> &nbsp;
+      <input type="number" id="Childrens" min="0" max="100" required> <br> <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>Preferences</b></legend>
+      <label> Room type:</label>
+      <input type="radio" id="Standard" name="RoomType" value="Standard" required>
+      <label>Standard</label>
+      <input type="radio" id="Business" name="RoomType" value="Business" required>
+      <label>Business</label>
+      <input type="radio" id="Suite" name="RoomType" value="Suite" required>
+      <label>Suite</label><br>
+      <label> Bed type:</label>
+      <input type="radio" id="King" name="BedType" value="King" required>
+      <label>King</label>
+      <input type="radio" id="DoubleDouble" name="BedType" value="Double Double" required>
+      <label>Double Double</label> <br>
+      <input type="checkbox" id="Smoking" name="Smoking" value="Smoking">
+      <label>Smoking</label><br>
 
-</fieldset>
-<br>
-<fieldset>
-    <legend><b>Contact Information</b></legend>
-    <label for="Name">Name:</label>
-    <input type = "text" placeholder ="Anne Boehm"> <br>
-    <label for="Email">Email:</label> &nbsp;
-    <input type = "email" placeholder ="anne@murach"> <br> 
-    <label for="Phone:">Phone:</label> &nbsp;
-    <input type = "number" placeholder ="9999999999">
-</fieldset>
-<br>
-<input type="submit" value="Submit Request"> <br> <br>
-<footer>
-    &copy; Abhi Bhagat/N01639927 2024
-</footer>
-</form>
-
-<nav>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>Contact Information</b></legend>
+      <label for="Name">Name:</label>
+      <input type = "text" placeholder ="Anne Boehm" id="Name" required> <br>
+      <label for="Email">Email:</label> &nbsp;
+      <input type = "email" placeholder ="anne@murach" id="Email" required> <br>
+      <label for="Phone:">Phone:</label> &nbsp;
+      <input type = "number" placeholder ="9999999999" id="Phone" required>
+    </fieldset>
+    <br>
+    <div class="button">
+    <input type="submit" value="Submit Request" onclick="return validateForm();">
+    </div>
+    <br> <br>
+    <footer>
+      &copy; Abhi Bhagat/N01639927 2024
+    </footer>
+  </form>
+</div>
+</main>
+  <nav>
     <ul>
-        <a href ="index.html"> Sales Tax Calculator</a> &nbsp; &nbsp;
-        <a href ="part2.html"> Change Calculator</a> &nbsp; &nbsp;
-        <a href ="part3.html"> Income Tax Calculator</a> &nbsp; &nbsp;
-        <a href ="part4.html"> Reservation Request</a> &nbsp; &nbsp;
+      <a href ="index.html"> Sales Tax Calculator</a> &nbsp; &nbsp;
+      <a href ="part2.html"> Change Calculator</a> &nbsp; &nbsp;
+      <a href ="part3.html"> Income Tax Calculator</a> &nbsp; &nbsp;
+      <a href ="part4.html"> Reservation Request</a> &nbsp; &nbsp;
     </ul>
-</nav>
+  </nav>
+
+  <script src="../js/part4.js"></script>
 </body>
 </html>
