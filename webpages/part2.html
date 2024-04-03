@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Change Calculator by Abhi</title>
-    <link rel="stylesheet" href="../css/site.css">
-</head>
-<body>
-<main>
-<div id="commonDesign">
-    <form method="GET" id="change-form" name="changeForm">
-    <fieldset>
-        <h1>Change Calculator</h1>
-        <label for="ChangeAmount">Enter amount of change due (0-99):</label>
-        <input type="number" min="1" max="99" name="changeAmount" id="changeAmount" placeholder="67">
-        <div class="button">
-        <input type="submit" class="button" value="Calculate">
-    </div>
-    <label for="quarters">Quarters:</label> &nbsp;
-    <input type="number" name="quarters" id="quarters" placeholder="2"> <br> <br>
-    <label for="dimes">Dimes:</label> &nbsp;&nbsp; &nbsp;
-    <input type="number" name="dimes" id="dimes" placeholder="1"> <br> <br>
-    <label for="nickels">Nickels:</label> &nbsp;
-    <input type="number" name="nickels" id="nickels" placeholder="1"> <br> <br> 
-    <label for="pennies">Pennies:</label> &nbsp;
-    <input type="number" name="pennies" id="pennies" placeholder="2"> <br> <br> 
-    <footer>
-        &copy; Abhi Bhagat/N01639927 2024
-    </footer>
-</fieldset>
-</form>
-</div>
-</main>
-<nav>
-    <ul>
-        <a href="index.html">Sales Tax Calculator</a> &nbsp; &nbsp;
-        <a href="part2.html">Change Calculator</a> &nbsp; &nbsp;
-        <a href="part3.html">Income Tax Calculator</a> &nbsp; &nbsp;
-        <a href="part4.html">Reservation Request</a> &nbsp; &nbsp;
-    </ul>
-</nav>
-<script src="../js/part2.js"></script>
-</body>
+    <link rel="stylesheet" href="../css/site.css" />
+  </head>
+  <body>
+    <main>
+      <div id="commonDesign">
+        <form method="GET" id="change-form" name="changeForm">
+          <fieldset>
+            <h1>Change Calculator</h1>
+            <div class="flex-container-main" style="display:flex; justify-content: space-between;"> 
+            <div class="flex-container">
+              <label for="ChangeAmount"
+                >Enter amount of change due (0-99):</label
+              >
+              <input
+                type="number"
+                min="1"
+                max="99"
+                name="changeAmount"
+                id="changeAmount"
+                placeholder="67"
+              />
+            </div>
+            <div class="button">
+              <input type="submit" class="button" value="Calculate" />
+            </div>
+            </div>
+            <label for="quarters">Quarters:</label> &nbsp;
+            <input
+              type="number"
+              name="quarters"
+              id="quarters"
+              placeholder="2"
+            />
+            <br />
+            <br />
+            <label for="dimes">Dimes:</label> &nbsp;&nbsp; &nbsp;
+            <input type="number" name="dimes" id="dimes" placeholder="1" />
+            <br />
+            <br />
+            <label for="nickels">Nickels:</label> &nbsp;
+            <input type="number" name="nickels" id="nickels" placeholder="1" />
+            <br />
+            <br />
+            <label for="pennies">Pennies:</label> &nbsp;
+            <input type="number" name="pennies" id="pennies" placeholder="2" />
+            <br />
+            <br />
+            <footer>&copy; Abhi Bhagat/N01639927 2024</footer>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <a href="index.html">Sales Tax Calculator</a>
+        &nbsp; &nbsp;
+        <a href="part2.html">Change Calculator</a>
+        &nbsp; &nbsp;
+        <a href="part3.html">Income Tax Calculator</a>
+        &nbsp; &nbsp;
+        <a href="part4.html">Reservation Request</a>
+        &nbsp; &nbsp;
+      </ul>
+    </nav>
+    <script src="../js/part2.js"></script>
+  </body>
 </html>

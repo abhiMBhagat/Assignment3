@@ -12,10 +12,16 @@
     <form method="GET">
     <fieldset>
         <h1>Income Tax Calculator</h1>
-    <label for="TaxableIncome">Enter taxable income:</label>
-    <input type="number" placeholder="57650" name="taxableIncome">
+        <div style="display: flex;    justify-content: space-evenly;">
+        <div>
+            <label for="TaxableIncome">Enter taxable income:</label>
+            <input type="number" placeholder="57650" name="taxableIncome">
+
+        </div>
     <div class="button">
     <input type="submit" value="Calculate"> 
+    </div>
+
     </div>
     <label for="incomeTaxOwed">Income tax owed:</label> &nbsp;
     <input type="number" placeholder="8473.00" name="incomeTaxOwed" readonly> <br> <br>
